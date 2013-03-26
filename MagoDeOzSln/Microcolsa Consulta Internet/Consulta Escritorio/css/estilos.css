@@ -1,0 +1,358 @@
+
+/*Maquetacion principal*/
+
+#contenedor2{
+	width:100%; 
+	background-color: #ffffff; 
+	text-align:	center; 
+	margin: 0 auto 0 auto; 
+	font-family:Verdana; 
+}
+
+#cabecera2{
+	width:100%; 
+	background-color: yellow; 
+	text-align: center; 
+	overflow:hidden; 
+	padding: 0px 0px 0px 0px; 
+	margin: 0 auto 10px auto; 
+}
+
+#cuerpo2{
+	width: 100%; 
+	margin: 0px auto 0px auto; 
+	background-color: #f5f5f5; 
+	overflow: hidden; 
+}
+
+#izquierda2{
+	float: left; 
+	width: 210px;
+	height: 500px; 
+	/*background-color: red;*/ 
+	font: 10pt Verdana; 
+	text-align: center; 
+	
+}
+
+#centro2 {
+	float: left; 
+	width: 30%;
+	height: 500px; 
+	margin: 0px 0px 0px 10px; 
+	/*background-color: green;*/ 
+	font: 12pt Verdana; 
+	text-align: justify; 
+}
+
+#derecha2{
+	float: left; 
+	width: 50%;
+	height:500px;
+	margin: 0px 0px 0px 10px; 
+	/*background-color:black;*/ 
+	font: 10pt Verdana; 
+	text-align: center; 
+}
+
+#pie2{
+	height: 40px;
+	width: 100%;
+	background-color: blue;
+	margin: 10px 0 0 0;
+	padding: 0 0 0 0px;
+	text-align: center;
+	clear: both;
+	font: 8pt Verdana;
+	color: yellow;
+	position: fixed;
+	top: -webkit-calc(100% - 40px); 
+}
+
+/***************************************************************/
+
+/*********************************************Botones****************************************/
+
+.button, .button span {
+   display: inline-block;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+}
+.button {
+   white-space: nowrap;
+   line-height:1em;
+   position:relative;
+   outline: none;
+   overflow: visible; 
+   cursor: pointer;
+   border: 1px solid #999;
+   border: rgba(0, 0, 0, .2) 1px solid;
+   border-bottom:rgba(0, 0, 0, .4) 1px solid;
+   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+   box-shadow: 0 1px 2px rgba(0,0,0,.2);
+   background: -moz-linear-gradient(
+      center top,
+      rgba(255, 255, 255, .1) 0%,
+      rgba(0, 0, 0, .1) 100%
+   );
+   background: -webkit-gradient(
+      linear,
+      center bottom,
+      center top,
+      from(rgba(0, 0, 0, .1)),
+      to(rgba(255, 255, 255, .1))
+   );
+   -moz-user-select: none;
+   -webkit-user-select:none;
+   -khtml-user-select: none;
+    margin-bottom:10px;
+}
+.button.full, .button.full span {
+   display: block;
+}
+
+.button:hover, .button.hover {
+   background: -moz-linear-gradient(
+      center top,
+      rgba(255, 255, 255, .2) 0%,
+      rgba(255, 255, 255, .1) 100%
+   );
+   background: -webkit-gradient(
+      linear,
+      center bottom,
+      center top,
+      from(rgba(255, 255, 255, .1)),
+      to(rgba(255, 255, 255, .2))
+   );
+}
+.button:active, .button.active {
+   top:1px;
+}
+.button span {
+   position: relative;
+   color:#fff;
+   text-shadow:0 1px 1px rgba(0, 0, 0, 0.25);
+   border-top: rgba(255, 255, 255, .2) 1px solid;
+   padding:0.6em 1.3em;
+   line-height:1em;
+   text-align:center;
+   white-space: nowrap;
+}
+
+.button.pequeno span {
+   font-size:12px;
+}
+.button.mediano span {
+   font-size:16px;
+}
+.button.grande span {
+   font-size:22px;
+}
+
+.button.rojo {
+   background-color: #e62727;
+}
+.button.naranja {
+   background-color: #ff5c00;
+}
+
+.button.azul {
+   background-color: #00ADEE;
+}
+
+a{
+   color: #0000cc;
+   text-decoration: none;
+}
+
+/********************************************************************************************/
+
+/************************************************FORMULARIO******************************************/
+
+#indices {  
+   background-color: #F2F7F9;
+	width: 331px;
+	padding: 20px;
+	margin: 0px auto;
+	border: 6px solid #8FB5C1;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	position: relative; 
+}  
+  
+#indices h1 {  
+    font-size:42px;  
+}  
+  
+#indices h2 {  
+    margin-bottom:15px;  
+    font-style:italic;  
+    font-weight:normal;  
+}  
+  
+#indices input, #indices select, #indices textarea, #indices label {  
+    font-size:15px;  
+    margin-bottom:2px;  
+}  
+  
+#indices input, #indices select, #indices textarea {  
+    width:330px;  
+    border: 1px solid #CEE1E8;  
+    margin-bottom:20px;  
+    padding:4px;  
+}  
+  
+#indices input:focus,#indices select:focus, #indices textarea:focus {  
+    border: 1px solid #AFCDD8;  
+    background-color: #EBF2F4;  
+}  
+  
+#indices textarea {  
+    height:150px;  
+    resize: none;  
+}  
+  
+#indices label {  
+    display:block;  
+}  
+  
+#indices .required {  
+    font-weight:bold;  
+    color:#F00;      
+}  
+  
+#indices #submit-button {  
+    width: 100px;  
+    background-color:#333;  
+    color:#FFF;  
+    border:none;  
+    display:block;  
+    margin-bottom:0px;  
+    margin-right:6px;  
+    background-color:#8FB5C1;  
+    -moz-border-radius:8px;  
+}  
+  
+#indices #submit-button:hover {  
+    background-color: #A6CFDD;  
+}  
+  
+#indices #submit-button:active {  
+    position:relative;  
+    top:1px;  
+}  
+  
+#indices #loading {  
+    width:32px;  
+    height:32px;  
+    display:block;  
+    position:absolute;  
+    display:none;  
+}  
+  
+#errors {  
+    border:solid 1px #E58E8E;  
+    padding:10px;  
+    margin:25px 0px;  
+    display:block;  
+    width:437px;  
+    -webkit-border-radius:8px;  
+    -moz-border-radius:8px;  
+    border-radius:8px;  
+    display:none;  
+}  
+  
+#errors li {  
+    padding:2px;  
+    list-style:none;      
+}  
+  
+#errors li:before {  
+    content: ' - ';      
+}  
+  
+#errors #info {  
+    font-weight:bold;  
+}  
+  
+#errors #info:before {  
+    content: '';      
+}  
+  
+#success {  
+    border:solid 1px #83D186;  
+    padding:25px 10px;  
+    margin:25px 0px;  
+    display:block;  
+    width:437px;  
+    -webkit-border-radius:8px;  
+    -moz-border-radius:8px;  
+    border-radius:8px;  
+    font-weight:bold;  
+    display:none;  
+}  
+  
+#errors.visible, #success.visible {  
+    display:block;      
+}  
+  
+#req-field-desc {  
+    font-style:italic;  
+}  
+  
+  
+/* chrome, safari */  
+::-webkit-input-placeholder {  
+    color:#CCC;  
+    font-style:italic;  
+}  
+  
+/* mozilla */  
+input:-moz-placeholder, textarea:-moz-placeholder {  
+    color:#CCC;  
+    font-style:italic;  
+}  
+  
+/* ie (faux placeholder) */  
+input.placeholder-text, textarea.placeholder-text  {   
+    color:#CCC;  
+    font-style:italic;  
+}  
+
+/**************************************************** Tabla *********************************************/
+
+table.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 0 1em;
+    width: 350px;
+}
+ 
+/* Heading styles */
+table.table th {
+    font-size: 11px;
+    vertical-align: top;
+    text-align: left;
+    padding: 3px;
+    font-weight: bold;
+    background: #E8EDFF;
+    border: 1px solid #AAA;
+}
+ 
+/* Cell style */
+table.table td {
+    vertical-align: top;
+    padding: 5px;
+    border-collapse: collapse;
+    border: 1px solid #CCC;
+}
+ 
+/* Even row style, makes reading a little easier */
+table.table .even {
+    background: #F0F3FF;
+}
+
+/****************************************************************************************************************/
