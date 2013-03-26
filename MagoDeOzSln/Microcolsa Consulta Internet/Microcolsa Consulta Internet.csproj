@@ -42,6 +42,9 @@
     <Content Include="app.js.map">
       <DependentUpon>app.ts</DependentUpon>
     </Content>
+    <Content Include="Views\frmConsultaInternet\frmConsultaInternet.css" />
+    <Content Include="Views\frmConsultaInternet\frmConsultaInternet.html" />
+    <Content Include="Views\frmConsultaInternet\frmConsultaInternet.js" />
     <Content Include="Views\Login\frmLogin.css" />
     <Content Include="Views\Login\frmLogin.html" />
     <Content Include="Views\Login\frmLogin.js" />

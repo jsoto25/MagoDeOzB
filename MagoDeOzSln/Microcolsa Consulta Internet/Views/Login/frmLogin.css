@@ -12,6 +12,13 @@ body
     background-color: #0b3972;
 }
 
+form
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
 #logintable
 {
     display: table;
@@ -40,8 +47,7 @@ label
 
 #loginbox
 {
-    margin: auto;
-    width: 410px;
+    margin: auto;    
     padding: 25px;
     background-color: rgb(25, 84, 148);
     border-radius: 10px;
