@@ -1,0 +1,226 @@
+/*Reseteo unniversal*/
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+article,figcaption,figure,footer,header,hgroup,nav,section{
+	display: block;
+}
+nav ul{
+	list-style: none;
+	background: #0072C6;	
+}
+nav li{
+	display: inline-block;
+	padding: 0.1em;
+	vertical-align:center;
+}
+nav a{
+	background: #0072C6;	
+	border-radius: 0.25em;
+	color: #FFF;
+	display: block;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 1.0em;	
+	padding: 0.2em;
+	text-decoration:none;
+	-ms-transition:all 0.5s ease-in;
+	-moz-transition:all 0.5s ease-in;
+	-o-transition:all 0.5s ease-in;
+	-webkit-transition:all 0.5s ease-in;
+	transition:all 0.5s ease-in;
+}
+nav a:hover
+{
+	background: #003E6A;
+	border: 0.1em;	
+	color: #FFF;
+	-ms-transition:all 0.5s ease-out;
+	-moz-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	-webkit-transition:all 0.5s ease-out;
+	transition:all 0.5s ease-out;
+}
+html, body
+{
+	margin: 0;			/* Remove body margin/padding */
+	padding: 0;
+	overflow: hidden;	/* Remove scroll bars on browser window */
+}
+h2{
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 1.0em;	
+	padding: 0.2em;
+
+}
+input {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 10px;
+    border: 1px solid #003399;
+}
+#Archivadores{
+	background: #EBEBEB;
+	width: 100%;
+	overflow: scroll;
+}
+#herramientaVisor{
+	background: #EBEBEB;
+	width: 100%;
+	overflow: scroll;
+	vertical-align: center;
+}
+#MySplitter{
+	border: 3px solid #669;
+	min-width: 500px;	/* Splitter can't be too thin ... */
+	min-height: 300px;	/* ... or too flat */
+	height: 100%;
+}
+#LeftPane {
+	width: 150px;
+	min-width: 100px;
+	max-width: 300px;
+	
+}
+#TopPane {				/* Top nested in right pane */
+	height: 150px;		/* Initial height */
+	min-height: 75px;	/* Minimum height */
+}
+#BottomPane {
+	background: #eef;
+	min-height: 100px;
+}
+.ui-state-default { background-color: #88c }
+.ui-state-hover { background-color: #bbf }
+.ui-state-highlight { background-color: #68f }
+.ui-state-error { background-color: #eaa }
+
+.splitter-pane {
+	overflow: auto;
+}
+.splitter-bar-vertical {
+	width: 6px;
+	background-image: url(img/vgrabber.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.splitter-bar-vertical-docked {
+	width: 10px;
+	background-image: url(img/vdockbar-trans.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.splitter-bar-horizontal {
+	height: 6px;
+	background-image: url(img/hgrabber.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.splitter-bar-horizontal-docked {
+	height: 10px;
+	background-image: url(img/hdockbar-trans.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.splitter-bar.ui-state-highlight {
+	opacity: 0.7;
+}
+.splitter-iframe-hide {
+	visibility: hidden;
+}
+
+@media screen and (min-width: 1081px){
+
+	header h1{
+		text-align: left;
+		width: 35%		
+	}
+	nav{
+		text-align:left;
+		width: 100%
+	}
+}
+@media screen and (max-width: 1080px){
+
+	nav li{
+		font-size: 1.3em;
+	}
+	article#galeria-inicio{
+		width: 90%;
+	}
+	aside{
+		width: 20%;
+	}
+	article#descripcion-acerca, article#multimedia-acerca, #img-servicios, article#maestro-servicios{
+		width: 45%;
+	}
+	article#servicio1, article#servicio2, article#servicio3{
+		width: 30%;
+	}
+	section#trabajos {
+		max-width: 90%
+	}
+	
+	div.portafolio article{
+		padding: .5em;
+	}
+
+}
+@media screen and (max-width: 800px){
+
+	nav li{
+		font-size: 0.95em;
+	}
+	article#galeria-inicio{
+		width: 88%;
+	}
+	#img-servicios,article#maestro-servicios, article#servicio1{
+		display: block;
+		margin: 0 0 .25em 0;
+		width: 95%;
+	}
+	#img-servicios{
+	width: 98%;
+
+	}
+	article#servicio2 , article#servicio3{
+
+		width: 45%;
+	}
+	section#trabajos {
+		max-width: 95%;
+
+	}
+	div.portafolio article{
+		padding: .2em;
+	}
+}
+@media screen and (max-width: 600px){
+
+	nav li{
+		display: inline-block;
+		margin: 0px;
+		width: 98%;
+	}
+	
+	section#principal , article#descripcion-acerca , article#servicio2{
+			margin-bottom: 0.2em;
+	}
+	
+	
+	section#principal,aside, article#descripcion-acerca, article#multimedia-acerca , article#servicio2, article#servicio3{
+		display: block;		
+		width: 95%;
+	}
+	
+	img-servicios{
+		display: none;
+	}
+	div.portafolio article{
+		display: block;
+		margin: .5em auto;
+		padding: 0;
+
+	}
+
+}

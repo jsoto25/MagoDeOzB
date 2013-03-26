@@ -1,0 +1,15 @@
+/*Microcolsa.com | HTML5*/
+/*TEAM*/
+	Creator: Microcolsa
+	Contact: @microcolsa
+	Email: microcolsa[at]microcolsa.com
+	From: Colombia
+/*IM MEMORIAL*/
+	RECONOCIMIENTO A
+/*THANKS*/
+	Microfilmaciones de Colombia S.A.
+/*SITE*/
+	Last update
+	Language
+	Standars HTML5,CSS3, JavaScript
+	ComponentsL JQUERY

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Microcolsa Consulta Internet</title>
+	<meta name="descripción" content="Microcolsa COnsulta internet aplicacion prototipo"/> 
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="author" type="text/plain" href="Humans.txt">
+	<link rel="sitemap" type="aplication/xml" title="Sitemap" href="sitemap.xml"/>	
+	<link rel="stylesheet" type="text/css" href="css/Microcolsa.css">
+	<link rel="stylesheet" type="text/css" href="css/flexigrid.css">
+	<!--Si la aplicacion no tiene conexion a internet utiliza la libreria que se encuentra en el directorio js-->
+	<script>
+		!window.jquery && document.write("<script src='js/jquery.min.js'><\/script>")
+	</script>
+	<script type="text/javascript" src="js/jquery.js"></script>	
+	<script type="text/javascript" src="js/splitter-152.js"></script>
+	<script type="text/javascript">
+		$().ready(function() {
+			// Vertical splitter. Set min/max/starting sizes for the left pane.
+			$("#MySplitter").splitter({
+				splitVertical: true,
+				outline: true,
+				sizeLeft: true,
+				resizeTo: window,
+				accessKey: "I"
+			});
+			// Horizontal splitter, nested in the right pane of the vertical splitter.
+			$("#RightPane").splitter({
+				splitHorizontal: true,
+				sizeTop: true,
+				accessKey: "H"
+			});
+
+		});
+	</script>
+	<script type="text/javascript" src="js/flexigrid.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+		jQuery(document).ready(function($) {
+			$('#flexme1').flexigrid({
+				sortname: "Proceso",
+                sortorder: "asc",
+                usepager: true,                
+                useRp: true,
+                rp: 10,
+                showTableToggleBtn: false,
+                resizable: false,               
+                height:190
+                
+			});
+		});
+		//]]>
+	</script>
+	<!--Permite obligar a los navegadores viejos a interpretar los taqs HTML basado en una libreria-->	
+	<!--[if lt IE 9]>
+	<script 
+	src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endIf]-->
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>				
+				<li><a href="Index.html">Inicio</a></li>				
+				<li><a href="buscador.html">Buscador</a></li>
+				<li><a href="Ayuda.html">Ayuda</a></li>				
+			</ul>
+		</nav>
+	</header>
+	<section id="Archivadores">
+		<h2>Archivadores disponibles</h2>
+		<table>
+			<tr>
+				<td><img src="img/fileCabinet.png" with="20" height="20" onclick="javascript:alert('Mercantil')" title="Mercantil"/></td>
+				<td></td>
+				<td><img src="img/fileCabinet.png" with="20" height="20" onclick="javascript:alert('Documentos')" title="Documentos"/></td>
+				<td></td>
+				<td><img src="img/fileCabinet.png" with="20" height="20" onclick="javascript:alert('Correspondencia')" title="Correspondencia"/></td>
+				<td></td>
+				<td><img src="img/fileCabinet.png" with="20" height="20" onclick="javascript:alert('Facturacion')" title="Facturacion"/></td>
+				<td></td>
+				<td><img src="img/fileCabinet.png" with="20" height="20" onclick="javascript:alert('Desarrollo')" title="Desarrollo"/></td>
+				<td></td>
+				<td><img src="img/fileCabinet.png" with="20" height="20" onclick="javascript:alert('Ventas')" title="Ventas"/></td>
+				<td></td>
+			</tr>
+		</table>
+	</section>
+	<section id="MySplitter">
+		  
+		  <article id="LeftPane">
+				<h2>Dialogo de busqueda</h2>
+				<table>
+					<tr>
+						<td><label for="username">Radicado </label></td>
+						<td></td>
+						<td><input type="text" name="RADINI" id="radicadoini" placeholder="FACT019283" pattern="FACT019283" required></td>
+						<td></td>
+						<td><input type="text"  name="RADFIN" id="radicadofin" placeholder="FACT019283" pattern="FACT019283" required></td>
+					</tr>
+					<tr>
+						<td><label for="username">Documento</label></td>
+						<td></td>
+						<td><input type="text" name="FECHAINI" id="radicadoini" placeholder="DD/MM/YYYY" pattern="" required></td>
+						<td></td>
+						<td><input type="text"  name="FECHAFIN" id="radicadofin" placeholder="DD/MM/YYYY" pattern="" required></td>
+					</tr>
+					<tr>
+						<td><label for="username">Tipo</label></td>
+						<td></td>
+						<td><input type="text" name="RADINI" id="TipoDoctoini" placeholder="Tipo documento" pattern="" required></td>
+						<td></td>
+						<td><input type="text"  name="RADFIN" id="TipoDoctoFin" placeholder="Tipo Documento" pattern="" required></td>
+					</tr>
+					<tr>
+						<td><label for="username">Remitente</label></td>
+						<td></td>
+						<td><input type="text" name="Remitente" id="TipoDoctoini" placeholder="Remitente" pattern="" required></td>
+						<td></td>
+						<td><input type="text"  name="Remitente" id="TipoDoctoFin" placeholder="Remitente" pattern="" required></td>
+					</tr>
+					<tr>
+						<td><label for="username">Asunto</label></td>
+						<td></td>
+						<td><input type="text" name="Remitente" id="AsuntoIni" placeholder="Asunto" pattern="" required></td>
+						<td></td>
+						<td><input type="text"  name="Remitente" id="AsuntoFin" placeholder="ASUNTO" pattern="" required></td>
+					</tr>
+					<tr>
+						<td><label for="username">Fecha</label></td>
+						<td></td>
+						<td><input type="text" name="Remitente" id="Fechaini" placeholder="Fecha" pattern="" required></td>
+						<td></td>
+						<td><input type="text"  name="Remitente" id="Fechafin" placeholder="Fecha" pattern="" required></td>
+					</tr>
+				</table>
+				<button onclick="JavaScript:alert('No se encontraron registros')">Buscar documentos</button>				
+		  </article>
+		  
+		  <article id="RightPane">
+		  
+			<article id="TopPane">
+				<article id"herramientaVisor">
+					<table>
+						<td><img src="img/Save.png" with="20" height="20" onclick="javascript:alert('Guardar Documento')" title="guardar documento"/></td>
+						<td><img src="img/Anterior.png" with="20" height="20" onclick="javascript:alert('Pagina anterior')" title="Pagina anterior"/></td>
+						<td><img src="img/Siguiente.png" with="20" height="20" onclick="javascript:alert('Siguiente pagina')" title="Pagina siguiente"/></td>
+						<td><img src="img/Firmar.png" with="20" height="20" onclick="javascript:alert('Documento firmado')"  title="Firmar documento"/></td>
+						<td>
+							<select>
+									<option value ="sydney">Documento aprobado</option>
+									<option value ="melbourne">Documento rechazado</option>
+									<option value ="cromwell" selected>Documento revisado</option>
+									<option value ="queenstown">Documento para auditar</option>
+							</select>
+							<img src="img/Sello.png" with="20" height="20" onclick="javascript:alert('Sello colocado correctamente')"  title="Firmar documento"/>
+						</td>
+					</table>					
+			</article>
+				<embed src="docs/D0002001.pdf" width="100%" height="100%" >
+			</article> 
+			
+			<article id="BottomPane">
+				<h2>Bandeja de Entrada</h2>
+								<table id="flexme1">
+									<thead>
+										<tr>											
+											<th width="240">Proceso</th>
+											<th width="240">Remitente</th>
+											<th width="240">Asunto</th>
+											<th width="240">Fecha</th>
+											<th width="10"> <input type = "checkbox" id = "chkEggs" /></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											
+											<td>Correspondencia</td>
+											<td>Antonio Muñoz</td>
+											<td>Invitacion apertura de nueva sede</td>
+											<td>26 de Marzo de 2013</td>
+											<th width="10"> <input type = "checkbox" id = "chkEggs" /></th>
+										</tr>
+										<tr>
+											
+											<td>Correspondencia</td>
+											<td>Gabriel Zapata</td>
+											<td>Solicitud de cotización</td>
+											<td>25 de marzo de 2013</td>
+											<th width="10"> <input type = "checkbox" id = "chkEggs" /></th>
+										</tr>
+										<tr>
+											
+											<td>Facturacion</td>
+											<td>Juan Esteban Perez</td>
+											<td>Factura de Dinamont Corporation</td>
+											<td>25 de marzo de 2013</td>
+											<th width="10"> <input type = "checkbox" id = "chkEggs" /></th>
+										</tr>
+										<tr>
+											
+											<td>Facturacion</td>
+											<td>Fernando Castrillos</td>
+											<td>Autorizacion de Factura de compra de equipos</td>
+											<td>25 de marzo de 2013</td>
+											<th width="10"> <input type = "checkbox" id = "chkEggs" /></th>
+										</tr>
+									</tbody>
+								</table>
+			</article> <!-- #BottomPane -->
+			
+		  </article> <!-- #RightPane -->
+  
+	</section> 
+	<header></header>
+</body>
+</html>
