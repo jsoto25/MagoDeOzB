@@ -4,22 +4,54 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="frmConsultaInternet.css" rel="stylesheet" />
-    <!--<link href="../../Content/jquery.mobile-1.3.0.min.css" rel="stylesheet" />-->
+    <link href="../../Content/jquery.mobile-1.3.0.min.css" rel="stylesheet" />
     <script src="../../Scripts/jquery-1.9.1.min.js"></script>
     <script src="../../Scripts/jquery.mobile-1.3.0.min.js"></script>    
 </head>
 <body>
 <div data-role="page" id="archivadores">
-	<div data-role="header" class="pageheader">ARCHIVADORES</div>
+	<div data-role="header" class="pageheader" data-theme="b">ARCHIVADORES</div>
 	<div data-role="content">
-        <a data-role="button" href="#criteriosbusqueda" class="listaarchivadores">Hojas de vida</a>
+        <a data-role="button" data-theme="a" href="#criteriosbusquedaadministrativa">Administrativa</a>
+        <a data-role="button" data-theme="a" href="#criteriosbusquedaclientes">Clientes</a>      
+        <a data-role="button" data-theme="a" href="#criteriosbusqueda">Correspondencia</a>
+        <a data-role="button" data-theme="a" href="#criteriosbusqueda">Hojas de vida</a>
 	</div>
-	<div data-role="footer" class="pageheader"></div>
+	<div data-role="footer" class="pageheader" data-theme="b"></div>
 </div>
-<div data-role="page" id="criteriosbusqueda">
-	<div data-role="header" class="pageheader">CRITERIOS DE BUSQUEDA</div>
-	<div data-role="content">...</div>
-	<div data-role="footer" class="pageheader"></div>
+<div data-role="page" id="criteriosbusquedaadministrativa">
+	<div data-role="header" class="pageheader" data-theme="b">CRITERIOS DE BUSQUEDA: Administrativa</div>
+	<div data-role="content">
+        <label for="radicado">Radicado</label>
+        <input type="text" data-clear-btn="true" data-mini="true" name="radicadoAdministrativa" id="radicadoAdministrativa" value="" />
+        <label for="FechaRadicado">Fecha Radicado</label>
+        <input type="date" data-clear-btn="true" data-mini="true" name="FechaRadicado" id="FechaRadicado" value="" />
+        <label for="Nit">Identificacion</label>
+        <input type="text" data-clear-btn="true" data-mini="true" name="NitAdministrativa" id="NitAdministrativa" value="" />
+        <label for="Entidad">Entidad</label>
+        <input type="text" data-clear-btn="true" data-mini="true" name="EntidadAdministrativa" id="EntidadAdministrativa" value="" />       
+        <label for="FechaAlmacenamiento">Fecha Almacenamiento</label>
+        <input type="date" data-clear-btn="true" data-mini="true" name="FechaAlmacenamientoAdministrativa" id="FechaAlmacenamientoAdministrativa" value="" class="text" />
+        <a href="#" data-role="button" data-icon="gear" data-theme="b" id="Administrativa" onclick="alert('Lista resultante del archivador: Administrativa')">Ir a lista resultante</a>        
+	</div>
+	<div data-role="footer" class="pageheader" data-theme="b"></div>
+</div>
+<div data-role="page" id="criteriosbusquedaclientes">
+	<div data-role="header" class="pageheader" data-theme="b">CRITERIOS DE BUSQUEDA: Clientes</div>
+	<div data-role="content">
+        <label for="radicado">Radicado</label>
+        <input type="text" data-clear-btn="true" data-mini="true" name="radicadoClientes" id="radicadoClientes" value="" />
+        <label for="FechaRadicado">Fecha Radicado</label>
+        <input type="date" data-clear-btn="true" data-mini="true" name="FechaRadicadoClientes" id="FechaRadicadoClientes" value="" />
+        <label for="Nit">Identificacion</label>
+        <input type="text" data-clear-btn="true" data-mini="true" name="NitClientes" id="NitClientes" value="" />
+        <label for="Entidad">Cliente</label>
+        <input type="text" data-clear-btn="true" data-mini="true" name="EntidadClientes" id="EntidadClientes" value="" />       
+        <label for="FechaAlmacenamiento">Fecha Almacenamiento</label>
+        <input type="date" data-clear-btn="true" data-mini="true" name="FechaAlmacenamientoClientes" id="FechaAlmacenamientoClientes" value="" class="text" />
+        <a href="#" data-role="button" data-icon="gear" data-theme="b" id="Clientes" onclick="alert('Lista resultante del archivador: Clientes')">Ir a lista resultante</a>        
+	</div>
+	<div data-role="footer" class="pageheader" data-theme="b"></div>
 </div>
 </body>
 </html>
