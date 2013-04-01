@@ -1,18 +1,4 @@
-﻿*
-{
-    margin: 0px;
-    padding: 0px;
-}
-
-body
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #0b3972;
-}
-
-form
+﻿form
 {
     position:absolute;
     width:100%;
@@ -35,14 +21,14 @@ form
         #logintable > div > div
         {
             display: table-cell;
-            vertical-align: middle;
+            vertical-align: middle;            
         }
 
 label
 {
     display: block;
     color: white;
-    font-family: 'Segoe UI';
+    font-family: segoeui;
 }
 
 #loginbox
@@ -53,7 +39,11 @@ label
     border-radius: 10px;
     -webkit-box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
     box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);    
+}
+
+#logintable>div>div{
+    padding:2%;
 }
 
 input:not([type=submit])

@@ -1,0 +1,31 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+}
+body {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: #0b3972;
+}
+
+@font-face {
+	font-family: segoeui;
+	src: url('../Fuentes/segoeui.eot'), url('../Fuentes/segoeui.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: segoeuib;
+	src: url('../Fuentes/segoeuib.eot'), url('../Fuentes/segoeuib.ttf') format('truetype');
+
+}
+
+@font-face {
+	font-family: segoeui;
+	src: url('../Fuentes/segoeui.eot'), url('../Fuentes/segoeui.ttf') format('truetype');
+}
+
+ @font-face {
+	font-family: segoeuib;
+	src: url('../Fuentes/segoeuib.eot'), url('../Fuentes/segoeuib.ttf') format('truetype');
+}

@@ -3,6 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microcolsa Consulta Internet", "Microcolsa Consulta Internet\Microcolsa Consulta Internet.csproj", "{00A495B2-3270-4686-9723-CFD8EF3DC2DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microcolsa.Suite.Services", "Microcolsa.Suite.Services\Microcolsa.Suite.Services.csproj", "{FA07BE90-2334-4F92-ACF5-8F1F3A1AA551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microcolsa.Suite.Core", "Microcolsa.Suite.Core\Microcolsa.Suite.Core.csproj", "{6E4759A0-4D6F-4FF8-A065-B20493715F1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microcolsa.Suite.Test", "Microcolsa.Suite.Test\Microcolsa.Suite.Test.csproj", "{34ED10A3-CDAA-4C01-BE7C-29229712BA16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microcolsa.Suite.Client.ConsultaInternet", "Microcolsa.Suite.Client.ConsultaInternet\Microcolsa.Suite.Client.ConsultaInternet.csproj", "{A9AD99AD-C728-45A7-8386-34E4572538ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +21,22 @@ Global
 		{00A495B2-3270-4686-9723-CFD8EF3DC2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00A495B2-3270-4686-9723-CFD8EF3DC2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00A495B2-3270-4686-9723-CFD8EF3DC2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA07BE90-2334-4F92-ACF5-8F1F3A1AA551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA07BE90-2334-4F92-ACF5-8F1F3A1AA551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA07BE90-2334-4F92-ACF5-8F1F3A1AA551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA07BE90-2334-4F92-ACF5-8F1F3A1AA551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E4759A0-4D6F-4FF8-A065-B20493715F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E4759A0-4D6F-4FF8-A065-B20493715F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E4759A0-4D6F-4FF8-A065-B20493715F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E4759A0-4D6F-4FF8-A065-B20493715F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34ED10A3-CDAA-4C01-BE7C-29229712BA16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34ED10A3-CDAA-4C01-BE7C-29229712BA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34ED10A3-CDAA-4C01-BE7C-29229712BA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34ED10A3-CDAA-4C01-BE7C-29229712BA16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9AD99AD-C728-45A7-8386-34E4572538ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AD99AD-C728-45A7-8386-34E4572538ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AD99AD-C728-45A7-8386-34E4572538ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9AD99AD-C728-45A7-8386-34E4572538ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
